@@ -4,7 +4,7 @@
 
 #define MAX_N 50000
 
-/*Shell Sort*/
+
 
 void shell(int* items, int count)
 {
@@ -32,37 +32,32 @@ void shell(int* items, int count)
     }
 }
 
-/* Quick Sort */
+
 
 void qs(int* items, int left, int right)
 {
-    int i, j;
-    int x, y;
+    int i = left;
+    int j = right;
+    int pivot = items[(left + right) / 2];
 
-    i = left;
-    j = right;
-
-    x = items[(left + right) / 2];
-
-    do
+    while (i <= j)
     {
-        while ((items[i] < x) && (i < right))
+        while (items[i] < pivot)
             i++;
 
-        while ((x < items[j]) && (j > left))
+        while (items[j] > pivot)
             j--;
 
         if (i <= j)
         {
-            y = items[i];
+            int temp = items[i];
             items[i] = items[j];
-            items[j] = y;
+            items[j] = temp;
 
             i++;
             j--;
         }
-
-    } while (i <= j);
+    }
 
     if (left < j)
         qs(items, left, j);
@@ -71,7 +66,7 @@ void qs(int* items, int left, int right)
         qs(items, i, right);
 }
 
-/*qsort */
+
 
 int compare(const void* a, const void* b)
 {
@@ -83,7 +78,7 @@ int compare(const void* a, const void* b)
     return 0;
 }
 
-/* Генерация массивов  */
+
 
 void fill_random(int arr[], int n)
 {
@@ -105,16 +100,16 @@ void fill_descending(int arr[], int n)
 
 void fill_half_half(int arr[], int n)
 {
-    for (int i = 0; i < n; i++)
-    {
-        if (i < n / 2)
-            arr[i] = i;
-        else
-            arr[i] = n - i;
-    }
+    int i;
+
+    for (i = 0; i < n / 2; i++)
+        arr[i] = i;
+
+    for (i = n / 2; i < n; i++)
+        arr[i] = n - i + n / 2;
 }
 
-/* Копирование */
+
 
 void copy_array(int src[], int dst[], int n)
 {
@@ -122,7 +117,7 @@ void copy_array(int src[], int dst[], int n)
         dst[i] = src[i];
 }
 
-/* Измерение времени */
+
 
 double test_shell(int arr[], int n)
 {
@@ -163,7 +158,7 @@ double test_qsort(int arr[], int n)
     return (double)(end - start) / CLOCKS_PER_SEC;
 }
 
-/* Основная программа */
+
 
 int main()
 {
