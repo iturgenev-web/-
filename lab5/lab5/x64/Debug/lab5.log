@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\User\Desktop\Логика и основы алгоритмизации в инженерных задачах\Logic-and-fundamentals-of-algorithmization-in-engineering-tasks\lab5\lab5\Source.cpp(6,6): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+C:\Users\User\Desktop\Логика и основы алгоритмизации в инженерных задачах\Logic-and-fundamentals-of-algorithmization-in-engineering-tasks\lab5\lab5\Source.cpp(13,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  lab5.vcxproj -> C:\Users\User\Desktop\Логика и основы алгоритмизации в инженерных задачах\Logic-and-fundamentals-of-algorithmization-in-engineering-tasks\lab5\x64\Debug\lab5.exe
