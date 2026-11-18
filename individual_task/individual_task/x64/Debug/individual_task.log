@@ -1,0 +1,3 @@
+﻿  Source.cpp
+C:\Users\romik\Downloads\Logic-and-fundamentals-of-algorithmization-in-engineering-tasks-lab7\Logic-and-fundamentals-of-algorithmization-in-engineering-tasks-lab7\individual_task\individual_task\Source.cpp(179,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  individual_task.vcxproj -> C:\Users\romik\Downloads\Logic-and-fundamentals-of-algorithmization-in-engineering-tasks-lab7\Logic-and-fundamentals-of-algorithmization-in-engineering-tasks-lab7\individual_task\x64\Debug\individual_task.exe
