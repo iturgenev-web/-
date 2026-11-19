@@ -1,0 +1,10 @@
+﻿  Source.cpp
+D:\lab8\2\Source.cpp(54,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+      D:\lab8\2\Source.cpp(54,11):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          D:\lab8\2\Source.cpp(103,23):
+          выполняется компиляция ссылки на экземпляр шаблон функции "double timeBfs<std::queue<int,std::deque<int,std::allocator<int>>>>(const Graph &)"
+          D:\lab8\2\Source.cpp(83,28):
+          выполняется компиляция ссылки на экземпляр шаблон функции "std::vector<int,std::allocator<int>> bfs<std::queue<int,std::deque<int,std::allocator<int>>>>(const Graph &)"
+  
+  2.vcxproj -> D:\lab8\2\x64\Debug\2.exe
